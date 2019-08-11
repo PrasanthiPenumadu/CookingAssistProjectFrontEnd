@@ -1,0 +1,16 @@
+<p>recipe works!</p>
+<!-- <form name="form.recipeCards">
+    <div id="recipeCards" class="container">
+      <recipe-list></recipe-list>
+    </div>
+  </form> -->
+
+  <!-- <ul *ngIf="recipe" class="list-group text-center">
+    <li *ngFor="let recipe of listRecipes"  class="list-group-item bg-primary">
+        <span class="badge">#{{listRecipes.}}</span>
+    </li>
+</ul> -->
+<ul *ngIf="listRecipes"  class="list-group text-center label">
+<li *ngFor="let r of listRecipes" class="list-group-item bg-primary">
+  <span class="badge">#{{r}}</span>
+</li></ul>

@@ -1,0 +1,29 @@
+<h2>{{recipebn.name}}</h2>
+
+
+<img class="card-img-top img-fluid" src="" alt="">
+<div class="card" style="width:200px">
+  <img class="card-img-top" src="assets/{{recipebn.name}}.jpeg" alt="Card image" style="width:100%">
+  <div class="card-body">
+      </div>
+      </div>
+    
+      <h3>{{recipebn.description}}</h3>
+      <h3>Preparation Time In Seconds :{{recipebn.prepTimeInSeconds}}</h3>
+      <h3>Cook Time In Second :{{recipebn.cookTimeInSeconds}}</h3>
+      <div>{{recipebn.ingredients.name}}</div>
+      <h3>Ingredients</h3>
+      <ul *ngIf="recipebn.ingredients"  >
+            <li *ngFor="let r of recipebn.ingredients"  >
+              <!-- <span class="badge">#{{r}}</span> -->
+              <h5>{{r.name}}---Quantity:{{r.quantity}}---Unit:{{r.unit}}</h5>
+            </li></ul>
+      <!-- <div>{{recipebn.steps}}</div> -->
+      <!-- <h3>Procedure</h3> -->
+      <ul *ngIf="recipebn.steps"  class="list-group text-center label">
+            <h3>Procedure:</h3>
+            <li *ngFor="let r of recipebn.steps"  >
+              <!-- <span class="badge">#{{r}}</span> -->
+             
+              <h4>{{r}}</h4>
+            </li></ul>

@@ -1,0 +1,13 @@
+#recipeCards {
+    margin-top: 100px;
+  }
+  
+  #recipeCards .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    
+  #recipeCards .row > div[class*='col-'] {
+    display: flex;
+    margin-bottom: 12px;
+  }

@@ -1,0 +1,22 @@
+
+<h2>Recipes</h2>
+*****************
+
+   
+      <!-- <div class="card"> -->
+      <!-- <img class="card-img-top img-fluid" src="" alt="Card image cap"> -->
+        <!-- <div class="card-block">
+          <h4 class="card-title">{{recipe.name}}</h4>
+            </div>
+      </div> --> 
+   
+      <!-- <ul *ngIf="recipeList" class="list-group text-center">
+        <li *ngFor="let recipe of listRecipes)" (click)="recipeNameClick(recipename)" class="list-group-item bg-primary">
+            <span class="badge">#{{listRecipe}}</span>
+        </li>
+    </ul>  -->
+    <ul *ngIf="listRecipe"  class="list-group text-center label">
+        <li *ngFor="let r of listRecipe" (click)="recipeNameClick(r)" class="list-group-item bg-primary">
+          <!-- <span class="badge">#{{r}}</span> -->
+          <h3>{{r}}</h3>
+        </li></ul>
